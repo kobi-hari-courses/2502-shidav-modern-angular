@@ -8,7 +8,7 @@ var b3 = max(30);
 var b4 = max(30, 40, 50);
 var s2 = max('hello', {x: 100, y: 200});
 
-
+max.a = 42;
 
 
 
@@ -63,15 +63,30 @@ function Person(name, age) {
     this.birthYear = thisYear - age;
 }
 
+function Dog() {
+    this.name = 'Rover';
+}
+
+Dog.prototype.bark = () => {
+    console.log('Woof! Woof!');
+}
+
 Person.prototype.log = function() {
     console.log('Name:', this.name, 'Age:', this.age);
 }
-
 
 var p = new Person('John', 30);
 var p2 = new Person('Jane', 25);
 var p3 = Person('Jack', 35);
 
+var d = new Dog();
 
 
 Person.prototype.pi = 3.14159;
+
+
+String.prototype.reverse = function() {
+    var letters = this.split('');
+    var reversed = letters.reverse();
+    return reversed.join('');
+}
