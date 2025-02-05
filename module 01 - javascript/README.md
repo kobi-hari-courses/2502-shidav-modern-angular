@@ -3,6 +3,7 @@
 ## Projects
 |     |     |
 | --- | --- |
+| [fun-with-js](./projects/fun-with-js/) | The crazy ways of Javascript |
 
 ## Data types in Javascript
 There are 6 data types in javascript. These are types of values - not variables. 
