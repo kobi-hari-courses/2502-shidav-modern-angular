@@ -1,7 +1,7 @@
 "use strict";
-console.log('Hello World');
-console.log('How are you?');
+Object.defineProperty(exports, "__esModule", { value: true });
+var calc_1 = require("./calc");
+var c = (0, calc_1.createCalculator)();
 var i = 10;
-var j = 20;
-var k = i + j;
-console.log('K = ', k);
+var res = c.add(i, calc_1.PI);
+console.log(res);

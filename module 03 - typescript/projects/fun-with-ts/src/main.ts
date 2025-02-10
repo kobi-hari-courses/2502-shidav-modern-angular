@@ -1,7 +1,9 @@
-console.log('Hello World');
-console.log('How are you?');
+import { Calculator, createCalculator, PI } from "./calc";
+
+let c: Calculator = createCalculator();
 
 let i = 10;
-let j = 20;
-let k = i + j;
-console.log('K = ', k);
+
+let res = c.add(i, PI);
+console.log(res);
+
