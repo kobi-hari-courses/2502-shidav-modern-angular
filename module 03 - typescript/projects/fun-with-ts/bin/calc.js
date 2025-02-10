@@ -15,3 +15,4 @@ function createCalculator() {
     return new Calculator();
 }
 exports.PI = 3.14159265359;
+//# sourceMappingURL=calc.js.map
