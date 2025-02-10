@@ -8,3 +8,7 @@
 
 ## Module 03 - Typescript
 * [Summary](./module%2003%20-%20typescript/README.md)
+* [Home Exercise](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex01-typescript)
+
+## Module 04 - Basic Angular
+* [Short Exercise](./module%2004%20-%20hello%20angular/exercises/README.md)
