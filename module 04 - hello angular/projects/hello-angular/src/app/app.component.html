@@ -1,0 +1,26 @@
+<div class="tools">
+    <input #searchBox type="search" 
+            [disabled]="isBusy"
+            (input)="setKeyword(searchBox.value)">
+    <button (click)="search()" [disabled]="isBusy">Search</button>
+    @if(isBusy) {
+        <img src="images/busy.gif">
+    }
+</div>
+<ul>
+    @for(res of results; track $index) {
+        <li>{{res}}</li>
+    }
+</ul>
+
+
+<!--
+
+4 types of binding
+
+1. Content Text interpolation: {{expression}}
+2. Property Binding: [property]="expression"
+3. Flow Control: @if, @for, @switch
+4. Event Binding: (event)="expression"
+
+-->
