@@ -11,4 +11,5 @@
 * [Home Exercise](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex01-typescript)
 
 ## Module 04 - Basic Angular
+* [Summary](./module%2004%20-%20hello%20angular/README.md)
 * [Short Exercise](./module%2004%20-%20hello%20angular/exercises/README.md)
