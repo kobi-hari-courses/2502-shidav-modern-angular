@@ -103,3 +103,40 @@ ng serve
 * We have created a search application view model the performs search of a keyword
 * We have seen `@if` and `@for` and understood what are structural directives and how they work
 * We have used the `[disabled]` directive to disable the search box and button when the search is in progress
+
+### CSS Recommendations in An angular application
+* Set the width and height of the 2 root elements to 100%
+  ```css
+  html, body {width: 100%, height: 100%}
+  ```
+* Make sure that all elements are sized using border-box sizing and have default 0 margin and padding
+  ```css
+  * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0    
+    }
+  ```
+
+* Make sure you set the display of every element that serves as panel or container to either `flex` or `grid`
+  * Use `grid` to divide space between child elements
+  * Use `flex` to arrange elements on an axis
+
+
+### Angular Built-in CSS Directives
+* We have created a responsive layout using css grid, and flex
+* We have created a view model holding the lists of colors, fonts and sizes and the selected item in each array
+* We have added actions that modify the selected color, font and size
+* We have created a list of items in the HTML, and allowed to select color, size and font
+* We have used fancy CSS to decorate it and make the app look nice
+* We used the `[class.whatever]` directive to conditionally apply a class on an element according to a boolean expression
+
+```html
+<div [class.chosen]="myColor === selectedColor">{{myColor}}</div>
+```
+
+* We used the `[style.property]` directive to apply a bound value on a css property
+
+```html
+<textarea [style.color]="myColor"></textarea>
+```
