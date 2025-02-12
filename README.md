@@ -13,3 +13,6 @@
 ## Module 04 - Basic Angular
 * [Summary](./module%2004%20-%20hello%20angular/README.md)
 * [Short Exercise](./module%2004%20-%20hello%20angular/exercises/README.md)
+
+## Module 05 - Change Detection and Signals
+* [Summary](./module%2005%20-%20signals%20and%20change%20detection/README.md)
