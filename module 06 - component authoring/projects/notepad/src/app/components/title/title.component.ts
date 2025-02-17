@@ -10,7 +10,7 @@ import { isColorDark } from "./title.helpers";
     }
 })
 export class TitleComponent {
-    readonly caption = input('Hello World');
+    readonly caption = input.required<string>();
 
     readonly color = input('lightcoral');
 
