@@ -1,0 +1,53 @@
+:host {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 5px;
+    padding: 5px;
+} 
+
+.area {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.content-area {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+}
+
+textarea {
+    resize: none;
+    outline: transparent 0px;
+    border: transparent 0px;
+}
+
+.sizes-area, .colors-area, .fonts-area {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item {
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.item.chosen {
+    background-color: rgb(174, 200, 169);
+}
+
+.item:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.item:hover.chosen {
+    background-color: rgb(131, 159, 126);
+}
+
