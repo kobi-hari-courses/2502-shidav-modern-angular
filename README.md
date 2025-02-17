@@ -16,3 +16,8 @@
 
 ## Module 05 - Change Detection and Signals
 * [Summary](./module%2005%20-%20signals%20and%20change%20detection/README.md)
+* [Short Exercise](./module%2005%20-%20signals%20and%20change%20detection/exercises/README.md)
+
+## Module 06 - Component Authoring
+* [Summary](./module%2006%20-%20component%20authoring/README.md)
+* [Short Exercise](./module%2006%20-%20component%20authoring/exercises/README.md)
