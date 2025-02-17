@@ -40,6 +40,7 @@ readonly sum = computed(() => this.a() + this.b())
   * If the action calls signals, it subscribes to these signals
   * Whenever any of these signals change, the action is re-executed
   * But only if the signals truely change!
+* The `effect` function can only be used in the constructor. Later on in the course, we will understand why
 
 ```typescript
 effect(() => {
