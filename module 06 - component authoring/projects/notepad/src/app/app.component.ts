@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
+import { TitleComponent } from './components/title/title.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [TitleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
 
   // state
-  readonly colors = signal( ['red', 'green', 'blue', 'purple', 'brown', 'black', 'teal']);
+  readonly colors = signal( ['red', 'green', 'blue', 'purple', 'cyan', 'brown', 'black', 'teal']);
   readonly fonts = signal(['Arial', 'Times New Roman', 'Courier New', 'Georgia', 'Verdana', 'Comic Sans MS', 'Impact']);
   readonly sizes = signal(['8px', '12px', '16px', '20px', '24px', '28px', '32px']);
 
