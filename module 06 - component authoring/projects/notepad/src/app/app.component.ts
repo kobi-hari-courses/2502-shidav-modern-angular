@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { TitleComponent } from './components/title/title.component';
+import { StringSelectorComponent } from './components/string-selector/string-selector.component';
 
 @Component({
   selector: 'app-root',
-  imports: [TitleComponent],
+  imports: [TitleComponent, StringSelectorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -19,18 +20,18 @@ export class AppComponent {
   selectedSize = signal(this.sizes()[0]);
 
   // actions
-  setSelectedColor(value: string) {
-    console.log('selected color:', value);
-    this.selectedColor.set(value);
-  }
+  // setSelectedColor(value: string) {
+  //   console.log('selected color:', value);
+  //   this.selectedColor.set(value);
+  // }
 
-  setSelectedFont(value: string) {
-    console.log('selected font:', value);
-    this.selectedFont.set(value);
-  }
+  // setSelectedFont(value: string) {
+  //   console.log('selected font:', value);
+  //   this.selectedFont.set(value);
+  // }
 
-  setSelectedSize(value: string) {
-    console.log('selected size:', value);
-    this.selectedSize.set(value);
-  }
+  // setSelectedSize(value: string) {
+  //   console.log('selected size:', value);
+  //   this.selectedSize.set(value);
+  // }
 }

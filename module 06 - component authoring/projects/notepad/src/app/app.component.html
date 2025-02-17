@@ -1,34 +1,43 @@
 <div class="title-area">
     <app-title 
         caption="Notepad App"
-        [color]="selectedColor()"></app-title>
+        [color]="selectedColor()"/>
 </div>
 
 <div class="area colors-area">
-    @for(item of colors(); track $index) {
-        <div class="item"
-            [class.chosen]="item === selectedColor()"
-            (click)="setSelectedColor(item)"
-        >{{item}}</div>
-    }
+    <app-string-selector
+    [options]="colors()"
+    [(selectedOption)]="selectedColor"
+
+    />
+
+    <!-- <app-string-selector
+    [options]="colors()"
+    [selectedOption]="selectedColor()"
+    (selectedOptionChange)="setSelectedColor($event)"
+
+    /> -->
+
+    <!-- <app-string-selector
+        [options]="colors()"
+        [selectedOption]="selectedColor()"
+        (selectionChanged)="setSelectedColor($event)"
+
+    /> -->
 </div>
 
 <div class="area fonts-area">
-    @for(item of fonts(); track $index) {
-        <div class="item"
-        [class.chosen]="item === selectedFont()"
-        (click)="setSelectedFont(item)"
-        >{{item}}</div>
-    }
+    <app-string-selector
+        [options]="fonts()"
+        [(selectedOption)]="selectedFont"
+    />
 </div>
 
 <div class="area sizes-area">
-    @for(item of sizes(); track $index) {
-        <div class="item"
-        [class.chosen]="item === selectedSize()"
-        (click)="setSelectedSize(item)"
-        >{{item}}</div>
-    }
+    <app-string-selector
+        [options]="sizes()"
+        [(selectedOption)]="selectedSize"
+        />
 </div>
 
 <div class="area content-area">
