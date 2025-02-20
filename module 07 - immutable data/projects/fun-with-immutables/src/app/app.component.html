@@ -1,0 +1,10 @@
+<pre>{{sig1() | json}}</pre>
+<button (click)="sortByName()">Order By Name</button>
+<button (click)="sortByAge()">Order By Age</button>
+
+<hr>
+<input type="text" #personName>
+<input type="number" #personAge>
+<button (click)="addNewPerson(personName.value, personAge.valueAsNumber)">Add</button>
+<button (click)="removeByName(personName.value)">Remove by Name</button>
+<button (click)="modifyAge(personName.value, personAge.valueAsNumber)">Modify Age</button>
