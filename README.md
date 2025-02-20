@@ -21,3 +21,15 @@
 ## Module 06 - Component Authoring
 * [Summary](./module%2006%20-%20component%20authoring/README.md)
 * [Short Exercise](./module%2006%20-%20component%20authoring/exercises/README.md)
+
+## Module 07 - Immutable data types
+* [Summary](./module%2007%20-%20immutable%20data/README.md)
+
+
+## Part A Summary
+We covered the basics of Typescript, Angular, Component Authoring and Signals. Let's practice using some exercises
+
+* [Home Exercise 2 - Angular Basics](https://github.com/kobi-hari-courses/modern-angular-exercises/blob/main/ex02-angular-basics)
+* [Home Exercise 3 - Angular Basics](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex03-angular-basics)
+* [Home Exercise 4 - Angular Components](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex04-angular-components)
+* [Home Exercise 5 - Angular Components](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex05-angular-components)
