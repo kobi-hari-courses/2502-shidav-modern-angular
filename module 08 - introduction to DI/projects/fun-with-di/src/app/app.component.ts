@@ -4,7 +4,7 @@ import { GroupComponent } from "./components/group/group.component";
 
 @Component({
   selector: 'app-root',
-  imports: [GroupComponent],
+  imports: [GroupComponent, CalcComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

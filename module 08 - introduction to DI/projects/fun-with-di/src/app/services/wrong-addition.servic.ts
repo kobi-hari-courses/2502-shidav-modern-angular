@@ -1,20 +1,19 @@
-import { inject, Injectable } from "@angular/core";
+import { Injectable } from "@angular/core";
 import { HistoryService } from "./history.service";
 
 @Injectable()
-export class AdditionService {
+export class WrongAdditionService {
     readonly id = Math.ceil(Math.random() * 1000000);
 
-    private readonly history = inject(HistoryService);
-
     constructor(
+        private history: HistoryService
     ) {
-        console.log(`AdditionService ${this.id} created`);
+        console.log(`WrongAdditionService ${this.id} created`);
     }
 
     add(a: number, b: number): number {
-        this.history.audit(`Service ${this.id} Adding ${a} and ${b}`);
-        return a + b;
+        this.history.audit(`Service ${this.id} Wrongly Adding ${a} and ${b}`);
+        return a + b + 1;
     }
 }
 

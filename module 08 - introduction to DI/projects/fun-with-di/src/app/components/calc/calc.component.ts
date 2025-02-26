@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { AdditionService } from '../../services/addition.service';
 
 @Component({
@@ -15,9 +15,11 @@ import { AdditionService } from '../../services/addition.service';
 })
 export class CalcComponent {
 
-constructor(
-  public additionService: AdditionService
-) {}
+readonly additionService = inject(AdditionService);
+
+// constructor(
+//   public additionService: AdditionService
+// ) {}
 
   readonly result = signal(-1);
 
