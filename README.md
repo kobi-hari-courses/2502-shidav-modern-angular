@@ -67,6 +67,10 @@
 ### Module 07 - Immutable data types
 * [Summary](./module%2007%20-%20immutable%20data/README.md)
 
+### Module 08 - Dependency Injection
+* [Summary](./module%2008%20-%20introduction%20to%20DI/README.md)
+* [Short Exercise](./module%2008%20-%20introduction%20to%20DI/exercises/README.md)
+
 
 ## Part A Summary
 We covered the basics of Typescript, Angular, Component Authoring and Signals. Let's practice using some exercises
