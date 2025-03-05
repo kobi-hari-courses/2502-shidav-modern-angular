@@ -23,12 +23,8 @@ readonly additionService = inject(AdditionService);
 
   readonly result = signal(-1);
 
-
-
   add(a: number, b: number) {
     const res = this.additionService.add(a, b);
     this.result.set(res);
   }
-
-
 }
