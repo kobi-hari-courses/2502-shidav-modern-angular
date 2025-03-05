@@ -1,0 +1,27 @@
+<div class="message">
+    Well done, you have completed the quiz
+</div>
+
+<div class="properties">
+    <div class="property">
+        <div class="label">Total questions</div>
+        <div class="value">{{questionsCount()}}</div>
+    </div>
+    <div class="property">
+        <div class="label">Correct Answers</div>
+        <div class="value">{{correctAnswers()}}</div>
+    </div>
+    <div class="property" 
+        [class.good]="score() > 70"
+        [class.medium]="score() > 50 && score() <= 70"
+        [class.bad]="score() <= 50"
+        >
+        <div class="label">Your Score</div>
+        <div class="value">{{score()}}</div>
+    </div>
+</div>
+
+<div class="actions">
+    <button class="action" (click)="exam.resetQuiz()">Restart</button>
+    <button class="action" (click)="exam.startNewQuiz()">New Quiz</button>
+</div>

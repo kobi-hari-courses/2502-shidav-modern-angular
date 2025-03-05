@@ -1,0 +1,6 @@
+<app-quiz-status/>
+@if(exam.isQuizDone()) {
+    <app-quiz-done/>
+} @else {
+    <app-question-presenter/>
+}
