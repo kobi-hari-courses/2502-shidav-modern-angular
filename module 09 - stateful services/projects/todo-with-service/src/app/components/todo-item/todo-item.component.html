@@ -1,1 +1,9 @@
-<p>todo-item works!</p>
+<div class="todo-icon">
+    @if(todo().isCompleted) {
+        <img src="checkmark.png">
+    }    
+</div>
+<div class="caption" [class.completed]="todo().isCompleted">
+    {{todo().caption}}
+</div>
+

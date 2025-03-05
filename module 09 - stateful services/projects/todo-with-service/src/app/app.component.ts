@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { TodoFormComponent } from './components/todo-form/todo-form.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [TodoListComponent, TodoFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

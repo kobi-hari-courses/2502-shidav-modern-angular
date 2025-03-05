@@ -1,1 +1,2 @@
-<p>todo-form works!</p>
+<input type="text" #textBox>
+<button (click)="data.addTodo(textBox.value); textBox.value=''">Add</button>

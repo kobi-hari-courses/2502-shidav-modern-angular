@@ -6,7 +6,11 @@ import { Todo } from '../models/todo.model';
 })
 export class DataService {
   // data
-  readonly #items = signal<Todo[]>([]);
+  readonly #items = signal<Todo[]>([
+    { caption: 'Learn Angular', isCompleted: true },
+    { caption: 'Learn RxJS', isCompleted: false },
+    { caption: 'Learn Zone.js', isCompleted: false }
+  ]);
 
   readonly items = this.#items.asReadonly();
 
