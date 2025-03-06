@@ -10,6 +10,8 @@
 | 17/2 |    1   | 06      |
 | 20/2 |    1   | 07      |
 | 26/2 |    1   | 08      |
+| 05/3 |    1   | 09      |
+| 06/3 |    1   | 10      |
 
 ## Course structure
 
@@ -59,6 +61,8 @@
 ### Module 05 - Change Detection and Signals
 * [Summary](./module%2005%20-%20signals%20and%20change%20detection/README.md)
 * [Short Exercise](./module%2005%20-%20signals%20and%20change%20detection/exercises/README.md)
+* [Home Exercise 2 - Angular Basics](https://github.com/kobi-hari-courses/modern-angular-exercises/blob/main/ex02-angular-basics)
+* [Home Exercise 3 - Angular Basics](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex03-angular-basics)
 
 ### Module 06 - Component Authoring
 * [Summary](./module%2006%20-%20component%20authoring/README.md)
@@ -66,10 +70,20 @@
 
 ### Module 07 - Immutable data types
 * [Summary](./module%2007%20-%20immutable%20data/README.md)
+* [Home Exercise 4 - Angular Components](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex04-angular-components)
+* [Home Exercise 5 - Angular Components](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex05-angular-components)
 
 ### Module 08 - Dependency Injection
 * [Summary](./module%2008%20-%20introduction%20to%20DI/README.md)
 * [Short Exercise](./module%2008%20-%20introduction%20to%20DI/exercises/README.md)
+
+### Module 09 - Signal based Stateful Services
+* [Summay](./module%2009%20-%20stateful%20services/README.md)
+
+### Module 10 - NgRx Signal Store Basics
+* [Summary](./module%2010%20-%20ngrx%20signals/README.md)
+* [Short Exercise](./module%2010%20-%20ngrx%20signals/exercises/README.md)
+* [Home Exercise](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex06-ngrx-signals)
 
 
 ## Part A Summary
@@ -79,5 +93,4 @@ We covered the basics of Typescript, Angular, Component Authoring and Signals. L
 * [Home Exercise 3 - Angular Basics](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex03-angular-basics)
 * [Home Exercise 4 - Angular Components](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex04-angular-components)
 * [Home Exercise 5 - Angular Components](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex05-angular-components)
-
 
