@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+    --shadow-y-offset: -2px;
+    --to-color: orange;
+
+    background: linear-gradient(45deg, yellow, var(--to-color));
+    color: var(--kobi, var(--hari, blue));
+    border: 1px solid gray;
+    box-shadow: -4px var(--shadow-y-offset) 3px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+h1:hover {
+    --shadow-y-offset: 2px;
+    --to-color: white;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --hari: purple;
+    --kobi: magenta;
+}
