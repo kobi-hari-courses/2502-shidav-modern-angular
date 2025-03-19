@@ -1,0 +1,29 @@
+@let vm = store.vm();
+
+<div class="message">
+    Well done, you have completed the quiz
+</div>
+
+<div class="properties">
+    <div class="property">
+        <div class="label">Total questions</div>
+        <div class="value">{{vm.questionsCount}}</div>
+    </div>
+    <div class="property">
+        <div class="label">Correct Answers</div>
+        <div class="value">{{vm.correctAnswersCount}}</div>
+    </div>
+    <div class="property" 
+        [class.good]="vm.score > 70"
+        [class.medium]="vm.score > 50 && vm.score <= 70"
+        [class.bad]="vm.score <= 50"
+        >
+        <div class="label">Your Score</div>
+        <div class="value">{{vm.score}}</div>
+    </div>
+</div>
+
+<div class="actions">
+    <button class="action" (click)="store.resetQuiz()">Restart</button>
+    <button class="action" (click)="store.startNewQuiz()">New Quiz</button>
+</div>
