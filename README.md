@@ -85,6 +85,9 @@
 * [Short Exercise](./module%2010%20-%20ngrx%20signals/exercises/README.md)
 * [Home Exercise](https://github.com/kobi-hari-courses/modern-angular-exercises/tree/main/ex06-ngrx-signals)
 
+### Module 14 - Basic Routing
+
+
 
 ## Part A Summary
 We covered the basics of Typescript, Angular, Component Authoring and Signals. Let's practice using some exercises
