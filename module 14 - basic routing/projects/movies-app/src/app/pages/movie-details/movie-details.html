@@ -1,1 +1,7 @@
-<p>movie-details works!</p>
+@if (movie.value() ; as mv) {
+    <h1>{{mv.name}}</h1>
+    <p>{{mv.description}}</p>
+    <img [src]="poster()"/>
+} @else {
+    <p>Loading movie details...</p>
+}

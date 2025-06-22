@@ -1,0 +1,27 @@
+:host {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: var(--p-9);
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 1rem;
+        color: var(--p-7);
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+
+    img {
+        max-height: 400px;
+        max-width: 90%;;
+        height: auto;
+        border-radius: 8px;
+        border: 2px solid var(--p-3);
+        object-fit: cover;
+    }
+}
