@@ -1,0 +1,7 @@
+@if (auth.isLoggedIn()) {
+    <h1>You are logged in</h1>
+    <button (click)="auth.logout()">Log out</button>
+} @else {
+    <h1>You are not logged in</h1>
+    <button (click)="auth.login()">Log in</button>
+}

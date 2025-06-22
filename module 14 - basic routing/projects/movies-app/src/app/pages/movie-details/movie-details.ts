@@ -3,10 +3,11 @@ import { DataService } from '../../services/data.service';
 import { httpResource } from '@angular/common/http';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { Movie } from '../../models/movie.model';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-movie-details',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './movie-details.html',
   styleUrl: './movie-details.scss'
 })

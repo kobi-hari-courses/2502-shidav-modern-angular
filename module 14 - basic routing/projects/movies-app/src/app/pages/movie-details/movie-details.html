@@ -2,6 +2,7 @@
     <h1>{{mv.name}}</h1>
     <p>{{mv.description}}</p>
     <img [src]="poster()"/>
+    <button [routerLink]="['/movies', mv.id, 'edit']">Edit</button>
 } @else {
     <p>Loading movie details...</p>
 }

@@ -1,2 +1,11 @@
 <a routerLink="home" routerLinkActive="here">Home</a>
 <a routerLink="movies" routerLinkActive="here">Movies</a>
+<a routerLink="account" routerLinkActive="here">Account</a>
+
+<div class="auth-status">
+    @if (auth.isLoggedIn()) {
+        Logged In
+    } @else {
+        Logged Out
+    }
+</div>
