@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { DataService } from '../../services/data.service';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-movies-list',
@@ -7,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './movies-list.scss'
 })
 export class MoviesList {
+  readonly data = inject(DataService);
+  readonly movies = toSignal(this.data.getAllMovies(), {
+    initialValue: []
+  });
 
 }
