@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    nav {
+        display: flex;
+        flex-direction: row;
+        background-color: lightgray;
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            background-color: lightgray;
+
+            &.bali {
+                background-color: rgb(98, 98, 98);
+                color: white;
+            }
+        }
+    }
+}
