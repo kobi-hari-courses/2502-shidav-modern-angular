@@ -1,5 +1,5 @@
 @for(movie of movies(); track movie.id) {
-    <div class="movie">
+    <div class="movie" (click)="goToMovieDetails(movie.id)">
         {{movie.name}}
     </div>
  
