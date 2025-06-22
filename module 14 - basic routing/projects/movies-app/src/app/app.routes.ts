@@ -6,6 +6,11 @@ import { MovieDetails } from './pages/movie-details/movie-details';
 export const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'home', component: Home}, 
-    {path: 'movies', component: MoviesList}, 
-    {path: 'movies/:movieId', component: MovieDetails}
+    {path: 'movies', component: MoviesList, children: [
+        {path: '', redirectTo: '1', pathMatch: 'full'}, 
+        {path: ':movieId', component: MovieDetails}
+    ]}
+
+
+
 ];

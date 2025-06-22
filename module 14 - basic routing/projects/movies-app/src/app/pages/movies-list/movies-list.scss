@@ -1,17 +1,26 @@
 :host {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+
+  .movies-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
 
-    .movie {
-        border: 1px solid var(--p-3);
-        padding: 4px;;
-        color: var(--p-6);
-        cursor: pointer;
+    .movie {        
+      border: 1px solid var(--p-3);
+      padding: 4px;
+      color: var(--p-6);
+      cursor: pointer;
 
-        &:hover {
-            background-color: var(--p-2);
-        }
+      &:hover {
+        background-color: var(--p-2);
+      }
+      &.selected {
+        background-color: var(--p-6);
+        color: var(--p-1);
+      }
     }
+  }
 }
