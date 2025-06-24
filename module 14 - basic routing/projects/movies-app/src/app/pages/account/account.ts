@@ -7,7 +7,7 @@ import { AuthService } from '../../services/auth.service';
   templateUrl: './account.html',
   styleUrl: './account.scss'
 })
-export class Account {
+export default class Account {
   readonly auth = inject(AuthService);
 
 }

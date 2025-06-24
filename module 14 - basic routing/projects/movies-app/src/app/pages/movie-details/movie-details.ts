@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './movie-details.html',
   styleUrl: './movie-details.scss'
 })
-export class MovieDetails {
+export default class MovieDetails {
   readonly movieId = input.required<string>();
   readonly idValue = computed(() => Number(this.movieId()));
 

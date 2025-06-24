@@ -9,7 +9,7 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './movies-list.html',
   styleUrl: './movies-list.scss'
 })
-export class MoviesList {
+export default class MoviesList {
   readonly data = inject(DataService);
   readonly router = inject(Router);
 
