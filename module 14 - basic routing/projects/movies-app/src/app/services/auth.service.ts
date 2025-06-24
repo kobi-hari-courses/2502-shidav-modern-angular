@@ -1,8 +1,9 @@
-import { Injectable, signal } from "@angular/core";
+import { effect, Injectable, signal } from "@angular/core";
 
 @Injectable({ providedIn: 'root'})
 export class AuthService {
-    readonly #isLoggedIn = signal(false);
+    readonly initialValue = JSON.parse(localStorage.getItem('isLoggedIn') || 'false') as boolean;
+    readonly #isLoggedIn = signal(this.initialValue);
 
     readonly isLoggedIn = this.#isLoggedIn.asReadonly();
 
@@ -11,5 +12,13 @@ export class AuthService {
     }
     logout() {
         this.#isLoggedIn.set(false);
+    }
+
+    constructor() {
+        effect(() => {
+            const isLoggedIn = this.isLoggedIn();
+            localStorage.setItem('isLoggedIn', JSON.stringify(isLoggedIn));
+
+        });
     }
 }
